@@ -34,7 +34,7 @@ def login(usuario: str, senha: str):
     user = session.query(Pessoa).filter_by(usuario=usuario, senha=senha).all()
     if len(user) == 0:
         return {'status': 'usuario inexistente'}
-    
+#Nesse trecho para informa o token de cada usuario 
     while True:
         token = token_hex(50)
         tokenExiste = session.query(Tokens).filter_by(token=token).all()

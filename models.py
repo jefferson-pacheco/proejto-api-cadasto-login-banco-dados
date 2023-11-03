@@ -5,11 +5,11 @@ from sqlalchemy.orm import sessionmaker
 import datetime
 
 USUARIO = "root"
-SENHA = "lobo0912"
+SENHA = "*****"
 HOST = "localhost"
 BANCO = "aulaapis"
 PORT = 3306
-#Esse trecho vai imforma qual banco de dados vamos trabalhar f"mysql+pymysql" ou f"PostgreSql+pymysql" voçe so faz informa qual banco vai trablha
+#Esse trecho vai imforma qual banco de dados vamos trabalhar f"mysql+pymysql" 
 CONN = f"mysql+pymysql://{USUARIO}:{SENHA}@{HOST}:{PORT}/{BANCO}"
 
 #Esse trecho faz parte da conexão do banco de dados. engine = create_engine(CONN, echo=True) mostra todos os passos 
